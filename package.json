@@ -9,7 +9,14 @@
     "dev": "webpack --mode development",
     "prettier": "prettier  — write src/**/*.js",
     "lint": "eslint --debug src/",
-    "lint:write": "eslint --debug src/ --fix"
+    "lint:write": "eslint --debug src/ --fix",
+   
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "YOUR_COMMAND_HERE",
+      "pre-push": "YOUR_COMMAND_HERE"
+    }
   },
   "repository": {
     "type": "git",
@@ -24,12 +31,6 @@
     "webpack.prod.config.js",
     "tsconfig.json"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "YOUR_COMMAND_HERE",
-      "pre-push": "YOUR_COMMAND_HERE"
-    }
-  },
   "bugs": {
     "url": "https://github.com/AlexKravchenko1605/training__/issues"
   },
