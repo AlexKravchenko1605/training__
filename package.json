@@ -9,7 +9,7 @@
     "dev": "webpack --mode development",
     "prettier": "prettier  — write src/**/*.js",
     "lint": "eslint --debug src/",
-    "lint:write": "eslint --debug src/ --fix",
+    "lint:write": "eslint --debug src/ --fix"
    
   },
   "husky": {
