@@ -1,5 +1,5 @@
 import { file } from './scripts/first';
-const nameL = 'alex'
+const nameL = 'alex';
 
 console.log('hello from typescript');
 
