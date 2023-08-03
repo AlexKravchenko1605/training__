@@ -9,7 +9,8 @@
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint .src/ --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "test": "npx jest"
+    "test": "npx jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -44,12 +45,7 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged":{
+  "lint-staged": {
     "*.ts": "npm run lint:fix"
   }
 }
